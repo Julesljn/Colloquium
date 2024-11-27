@@ -8,4 +8,8 @@ return [
         'login' => 'Login',
         'register' => 'Register',
     ],
+    'homeSection' => [
+        'subtitle' => "More effective interviews",
+        'text' => "A simple solution to enhance the efficiency of<br> your hiring interviews."
+    ]
 ];

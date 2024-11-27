@@ -22,6 +22,10 @@
     font-style: normal;
 }
 .logoTitle {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik', sans-serif !important;
     color: var(--primaryColor);
+    font-size: 1.75em;
+}
+.logoTitleLink, .logoTitle {
+    max-width: max-content;
 }

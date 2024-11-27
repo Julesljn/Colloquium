@@ -1,11 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Red_Hat', sans-serif;
+    background-color: var(--primaryColor);
+}
+.parallaxe {
+    padding-top: 50vh;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
 nav {
-    padding: 18px 30px;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    z-index: 100;
+    /* padding: 18px 30px; */
+    padding-left: 30px;
     background: rgba(8, 8, 8, 0.2);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
-    align-items: center
-
+    align-items: center;
 }
 .navbarList {
     display: flex;
@@ -13,8 +31,11 @@ nav {
     font-size: 1.15em;
 }
 .navbarItem {
-    font-family: 'Red_Hat', sans-serif;
     color: var(--primaryColor);
+    transition: 0.2s;
+}
+.navbarItem:hover {
+    color: var(--secondaryColor);
 }
 .headerVideo {
     height: 100vh;
@@ -25,10 +46,10 @@ nav {
     object-fit: cover;
 }
 .headerBtn {
-    font-family: 'Red_Hat', sans-serif;
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-right: 60px;
 }
 .registerBtn {
     font-size: 1.1em;
@@ -46,11 +67,128 @@ nav {
     display: flex;
 }
 .earthIcon {
-    width: 30px;
-    height: 30px;
-    fill: white;
+    width: 25px;
+    height: 25px;
     transition: 0.2s;
 }
 .earthIcon:hover {
-    content: url('/images/icons/earthWhite.svg');
+    content: url('/images/icons/earthBlack.svg');
+}
+.home_textCtn {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px;
+    background: rgba(8, 8, 8, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    max-width: max-content;
+}
+.home_subtitle, .home_text {
+    color: var(--primaryColor);
+}
+.home_subtitle {
+    font-size: 1.5em;
+}
+.home_text {
+    font-size: 1.25em;
+}
+.home {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.home_BtnCtn {
+    display: flex;
+    gap: 30px;
+    padding: 10px 0;
+}
+.homeBtn {
+    padding: 10px 40px;
+    color: var(--primaryColor);
+    background: rgba(8, 8, 8, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+    transition: 0.2s;
+}
+.homeBtn:hover {
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+}
+
+.services {
+    padding: 6vh 3vw;
+    z-index: 0;
+    margin: 100vh 0 0 0;
+    background-color: white;
+
+}
+.services ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes égales */
+    grid-template-rows: repeat(2, 1fr); /* 2 lignes égales */
+    gap: 15px; /* Espace entre les cellules */
+    list-style: none; /* Supprime les puces */
+    padding: 0;
+    margin: 0;
+}
+
+.services li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 150px;
+}
+
+.services li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.services li a img {
+    max-width: 45%;
+    max-height: 45%;
+    object-fit: contain;
+    display: block;
+}
+
+.services li:nth-child(2) a img {
+    max-width: 55%;
+    max-height: 55%;
+}
+.brand_alertCtn {
+    display: flex;
+    /* align-items: center; */
+    gap: 30px;
+}
+
+.brand_alert {
+    font-size: 2em;
+    color: var(--secondaryColor);
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    animation: pulse 1.5s infinite ease-in-out; /* Animation appliquée à l'étoile directement */
+}
+.brand_alert_text {
+    opacity: 0;
+    margin-top: 5px;
+    transition: 0.2s;
+}
+.activeAlert {
+    opacity: 1;
+}
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* Taille normale */
+    }
+    50% {
+        transform: scale(1.2);
+        color: rgb(130, 23, 23);
+    }
 }
