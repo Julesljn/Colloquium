@@ -42,14 +42,14 @@
     </div>
     <section class="services">
         <ul>
-            <li><a href=""><img src="/images/brands/alstom.svg" alt=""></a></li>
-            <li><a href=""><img src="/images/brands/apple.svg" alt=""></a></li>
-            <li><a href=""><img src="/images/brands/coca-cola.svg" alt=""></a></li>
-            <li><a href=""><img src="/images/brands/github.svg" alt=""></a></li>
-            <li><a href=""><img src="/images/brands/meta-quest.svg" alt=""></a></li>
-            <li><a href=""><img src="/images/brands/nike.svg" alt=""></a></li>
-            <li><a href=""><img src="/images/brands/tiktok.svg" alt=""></a></li>
-            <li><a href=""><img src="/images/brands/xbox.svg" alt=""></a></li>
+            <li><a href="https://www.alstom.com/"><img src="/images/brands/alstom.svg" alt="@lang('homepage.brandsAlt.alstom')"></a></li>
+            <li><a href="https://www.apple.com/"><img src="/images/brands/apple.svg" alt="@lang('homepage.brandsAlt.apple')"></a></li>
+            <li><a href="https://www.coca-cola.com/"><img src="/images/brands/coca-cola.svg" alt="@lang('homepage.brandsAlt.coca')"></a></li>
+            <li><a href="https://github.com/"><img src="/images/brands/github.svg" alt="@lang('homepage.brandsAlt.github')"></a></li>
+            <li><a href="https://www.meta.com/"><img src="/images/brands/meta.svg" alt="@lang('homepage.brandsAlt.meta')"></a></li>
+            <li><a href="https://www.nike.com/"><img src="/images/brands/nike.svg" alt="@lang('homepage.brandsAlt.nike')"></a></li>
+            <li><a href="https://www.tiktok.com/"><img src="/images/brands/tiktok.svg" alt="@lang('homepage.brandsAlt.tiktok')"></a></li>
+            <li><a href="https://www.xbox.com/"><img src="/images/brands/xbox.svg" alt="@lang('homepage.brandsAlt.xbox')"></a></li>
         </ul>
         <div class="brand_alertCtn">
             <span class="brand_alert">*</span>
