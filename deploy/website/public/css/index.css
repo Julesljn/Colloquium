@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --primaryColor: #fbfbfb;
+    --secondaryColor: #1a1a1d
+}
+@font-face {
+    font-family: "Rubik";
+    src: url('../fonts/Rubik/static/Rubik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Red_Hat";
+    src: url('../fonts/Red_Hat_Display/static/RedHatDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.logoTitle {
+    font-family: 'Rubik', sans-serif;
+    color: var(--primaryColor);
+}

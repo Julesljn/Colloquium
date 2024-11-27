@@ -1,0 +1,56 @@
+nav {
+    padding: 18px 30px;
+    background: rgba(8, 8, 8, 0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+
+}
+.navbarList {
+    display: flex;
+    gap: 40px;
+    font-size: 1.15em;
+}
+.navbarItem {
+    font-family: 'Red_Hat', sans-serif;
+    color: var(--primaryColor);
+}
+.headerVideo {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    object-fit: cover;
+}
+.headerBtn {
+    font-family: 'Red_Hat', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.registerBtn {
+    font-size: 1.1em;
+    padding: 8px 16px;
+    color: var(--primaryColor);
+    background-color: var(--secondaryColor);
+    border-radius: 7px;
+    transition: 0.2s;
+}
+.registerBtn:hover {
+    color: var(--secondaryColor);
+    background-color: var(--primaryColor);
+}
+.earthIconCtn {
+    display: flex;
+}
+.earthIcon {
+    width: 30px;
+    height: 30px;
+    fill: white;
+    transition: 0.2s;
+}
+.earthIcon:hover {
+    content: url('/images/icons/earthWhite.svg');
+}
