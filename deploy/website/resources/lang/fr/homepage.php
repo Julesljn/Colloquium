@@ -21,6 +21,7 @@ return [
         'nike' => 'Logo de Nike',
         'tiktok' => 'Logo de Tiktok',
         'xbox' => 'Logo de Xbox',
+        'gemini' => 'Logo de Gemini',
     ],
     'servicesSection' => [
         'title' => 'Colloquium vous offre la possibilité de vérifier l\'authenticité des compétences de vos candidats.',
@@ -32,5 +33,15 @@ return [
         '2' => 'Ajoutez des mots-clés stratégiques à chaque question pour une évaluation encore plus précise.',
         '3' => 'Notre intelligence artificielle analyse les réponses et identifie les points forts et les lacunes, en fonction des mots-clés définis.',
         '4' => 'Obtenez des résultats clairs et fiables pour sélectionner les meilleurs talents, sans que les candidats ne soupçonnent les critères analysés.',
+    ],
+    'presentationPictureAlt' => 'Photo du panel de création des questions sur le site',
+    'iaSection' => [
+        'title' => 'Colloquium : Un service qui s\'adapte à vos besoins',
+        'friendlyTagline' => [
+            '1' => 'Obtenez des axes d\'amélioration précis pour guider vos candidats.',
+            '2' => 'Découvrez ce qu’il aurait fallu dire pour une réponse parfaite.',
+            '3' => 'Ou restez simple avec une note globale claire et efficace.',
+        ],
+        'proposedGemini' => 'Propulsé par Gemini : une IA configurable pour un recrutement intelligent.',
     ],
 ];

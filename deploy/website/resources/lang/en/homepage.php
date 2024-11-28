@@ -21,6 +21,7 @@ return [
         'nike' => 'Logo of Nike',
         'tiktok' => 'Logo of Tiktok',
         'xbox' => 'Logo of Xbox',
+        'gemini' => 'Logo of Gemini',
     ],
     'servicesSection' => [
         'title' => 'Colloquium allows you to verify the authenticity of your candidates skills.',
@@ -33,4 +34,14 @@ return [
         '3' => 'Our artificial intelligence analyzes responses, highlighting strengths and weaknesses based on your chosen keywords.',
         '4' => 'Receive clear and reliable results to identify top talent, with candidates unaware of the criteria being assessed.',
     ],
+    'presentationPictureAlt' => 'Photo of the question creation panel on the website',
+    'iaSection' => [
+    'title' => 'Colloquium: A Service Tailored to Your Needs',
+    'friendlyTagline' => [
+        '1' => 'Receive precise improvement points to guide your candidates.',
+        '2' => 'Discover what should have been said for a perfect response.',
+        '3' => 'Or keep it simple with a clear and effective overall score.',
+    ],
+    'proposedGemini' => 'Powered by Gemini: a customizable AI for smart recruitment.',
+],
 ];

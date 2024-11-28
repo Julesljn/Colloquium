@@ -25,7 +25,7 @@
     <div class="parallaxe">
         <header>
             <video class="headerVideo" autoplay muted loop>
-                <source src="/videos/headerHomepage.mp4">
+                <source src="/videos/homepage/headerHomepage.mp4">
             </video>
         </header>
         <section class="home">
@@ -82,10 +82,40 @@
                 </ul>
             </div>
             <div class="servicesCtnImg">
-                <img src="/images/fakeImg.jpeg" alt="">
+                <img src="/images/homepage/presentation.png" alt="@lang('homepage.presentationPictureAlt')">
             </div>
         </div>
     </section>
+    <section class="ia">
+        <h2>@lang('homepage.navbar.2')</h2>
+        <div class="videoCtn">
+            <video autoplay muted loop>
+                <source src="/videos/homepage/brain.mp4">
+            </video>
+        </div>
+        <div class="videoTextCtn">
+            <h2>@lang('homepage.iaSection.title')</h2>
+            <ul>
+                <li>
+                    <p>@lang('homepage.iaSection.friendlyTagline.1')</p>
+                </li>
+                <li>
+                    <p>@lang('homepage.iaSection.friendlyTagline.2')</p>
+                </li>
+                <li>
+                    <p>@lang('homepage.iaSection.friendlyTagline.3')</p>
+                </li>
+            </ul>
+            <div class="iaLine"></div>
+            <div class="iaGeminiLogo">
+                <a href="https://gemini.google.com/"><img class="geminiLogo" src="/images/brands/gemini.svg" alt="@lang('homepage.brandsAlt.gemini')"></a>
+                <p>@lang('homepage.iaSection.proposedGemini')</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
     <script src="/js/homepage.js"></script>
 </body>
 
