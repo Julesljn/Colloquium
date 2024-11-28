@@ -44,11 +44,13 @@
         <ul>
             <li><a href="https://www.alstom.com/"><img src="/images/brands/alstom.svg" alt="@lang('homepage.brandsAlt.alstom')"></a></li>
             <li><a href="https://www.apple.com/"><img src="/images/brands/apple.svg" alt="@lang('homepage.brandsAlt.apple')"></a></li>
-            <li><a href="https://www.coca-cola.com/"><img src="/images/brands/coca-cola.svg" alt="@lang('homepage.brandsAlt.coca')"></a></li>
+            <li><a href="https://www.coca-cola.com/"><img src="/images/brands/coca-cola.svg"
+                        alt="@lang('homepage.brandsAlt.coca')"></a></li>
             <li><a href="https://github.com/"><img src="/images/brands/github.svg" alt="@lang('homepage.brandsAlt.github')"></a></li>
             <li><a href="https://www.meta.com/"><img src="/images/brands/meta.svg" alt="@lang('homepage.brandsAlt.meta')"></a></li>
             <li><a href="https://www.nike.com/"><img src="/images/brands/nike.svg" alt="@lang('homepage.brandsAlt.nike')"></a></li>
-            <li><a href="https://www.tiktok.com/"><img src="/images/brands/tiktok.svg" alt="@lang('homepage.brandsAlt.tiktok')"></a></li>
+            <li><a href="https://www.tiktok.com/"><img src="/images/brands/tiktok.svg" alt="@lang('homepage.brandsAlt.tiktok')"></a>
+            </li>
             <li><a href="https://www.xbox.com/"><img src="/images/brands/xbox.svg" alt="@lang('homepage.brandsAlt.xbox')"></a></li>
         </ul>
         <div class="brand_alertCtn">
@@ -60,9 +62,24 @@
         <h2>@lang('homepage.navbar.1')</h2>
         <div class="servicesCtn">
             <div class="servicesCtnText">
-                <p>Piano's integrated platform completes the loop between segmentation, personalization, and analytics</p>
-                <p>Identify a user cohort, target them with a personalized experience, and report on the results, all in real-time.</p>
-                <a href="">Découvrir</a>
+                <p>@lang('homepage.servicesSection.title')</p>
+                <p>@lang('homepage.servicesSection.subtitle')</p>
+                {{-- <a href="">@lang('homepage.servicesSection.button')</a> --}}
+                <div class="servicesLine"></div>
+                <ul>
+                    <li>
+                        <p>@lang('homepage.serviceSectionList.1')</p>
+                    </li>
+                    <li>
+                        <p>@lang('homepage.serviceSectionList.2')</p>
+                    </li>
+                    <li>
+                        <p>@lang('homepage.serviceSectionList.3')</p>
+                    </li>
+                    <li>
+                        <p>@lang('homepage.serviceSectionList.4')</p>
+                    </li>
+                </ul>
             </div>
             <div class="servicesCtnImg">
                 <img src="/images/fakeImg.jpeg" alt="">
