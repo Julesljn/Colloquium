@@ -40,7 +40,7 @@
             </div>
         </section>
     </div>
-    <section class="services">
+    <section class="brands">
         <ul>
             <li><a href="https://www.alstom.com/"><img src="/images/brands/alstom.svg" alt="@lang('homepage.brandsAlt.alstom')"></a></li>
             <li><a href="https://www.apple.com/"><img src="/images/brands/apple.svg" alt="@lang('homepage.brandsAlt.apple')"></a></li>
@@ -54,6 +54,19 @@
         <div class="brand_alertCtn">
             <span class="brand_alert">*</span>
             <p class="brand_alert_text">Fake brands / Fausses marques</p>
+        </div>
+    </section>
+    <section class="services">
+        <h2>@lang('homepage.navbar.1')</h2>
+        <div class="servicesCtn">
+            <div class="servicesCtnText">
+                <p>Piano's integrated platform completes the loop between segmentation, personalization, and analytics</p>
+                <p>Identify a user cohort, target them with a personalized experience, and report on the results, all in real-time.</p>
+                <a href="">Découvrir</a>
+            </div>
+            <div class="servicesCtnImg">
+                <img src="/images/fakeImg.jpeg" alt="">
+            </div>
         </div>
     </section>
     <script src="/js/homepage.js"></script>
