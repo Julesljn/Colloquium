@@ -1,6 +1,6 @@
 const iconAlert = document.querySelector('.brand_alert');
 const textAlert = document.querySelector('.brand_alert_text');
-const logoColloquium = document.querySelector('.logoTitleLink');
+
 iconAlert.addEventListener('mouseenter', () => {
     textAlert.classList.add('activeAlert');
 });
@@ -26,7 +26,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-logoColloquium.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+document.querySelectorAll('.logoTitleLink').forEach((logo) => {
+    logo.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 });
