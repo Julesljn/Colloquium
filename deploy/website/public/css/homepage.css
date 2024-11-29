@@ -33,9 +33,6 @@ nav {
     color: var(--primaryColor);
     transition: 0.2s;
 }
-.navbarItem:hover {
-    color: var(--secondaryColor);
-}
 .headerVideo {
     height: 100vh;
     width: 100vw;

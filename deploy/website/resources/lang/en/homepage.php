@@ -2,9 +2,9 @@
 
 return [
     'navbar' => [
-        '1' => 'Services',
-        '2' => 'Artificial Intelligence',
-        '3' => 'Contact',
+        '1' => 'Partner',
+        '2' => 'Services',
+        '3' => 'Intelligence Artificielle',
         'login' => 'Login',
         'register' => 'Register',
     ],

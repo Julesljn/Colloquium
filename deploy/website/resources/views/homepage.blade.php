@@ -6,9 +6,9 @@
     <nav>
         <x-logo-colloquium></x-logo-colloquium>
         <ul class="navbarList">
-            <li><a class="navbarItem" href="">@lang('homepage.navbar.1')</a></li>
-            <li><a class="navbarItem" href="">@lang('homepage.navbar.2')</a></li>
-            <li><a class="navbarItem" href="">@lang('homepage.navbar.3')</a></li>
+            <li><a class="navbarItem" href="#brands">@lang('homepage.navbar.1')</a></li>
+            <li><a class="navbarItem" href="#services">@lang('homepage.navbar.2')</a></li>
+            <li><a class="navbarItem" href="#ia">@lang('homepage.navbar.3')</a></li>
         </ul>
         <ul class="headerBtn">
             <li>
@@ -28,7 +28,7 @@
                 <source src="/videos/homepage/headerHomepage.mp4">
             </video>
         </header>
-        <section class="home">
+        <section id="home" class="home">
             <ul class="home_BtnCtn">
                 <li><a class="homeBtn" href="">@lang('homepage.navbar.register')</a></li>
                 <li><a class="homeBtn" href="">@lang('homepage.navbar.login')</a></li>
@@ -40,7 +40,7 @@
             </div>
         </section>
     </div>
-    <section class="brands">
+    <section id="brands" class="brands">
         <ul>
             <li><a href="https://www.alstom.com/"><img src="/images/brands/alstom.svg" alt="@lang('homepage.brandsAlt.alstom')"></a></li>
             <li><a href="https://www.apple.com/"><img src="/images/brands/apple.svg" alt="@lang('homepage.brandsAlt.apple')"></a></li>
@@ -58,8 +58,8 @@
             <p class="brand_alert_text">@lang('homepage.fakeBrand')</p>
         </div>
     </section>
-    <section class="services">
-        <h2>@lang('homepage.navbar.1')</h2>
+    <section id="services" class="services">
+        <h2>@lang('homepage.navbar.2')</h2>
         <div class="servicesCtn">
             <div class="servicesCtnText">
                 <p>@lang('homepage.servicesSection.title')</p>
@@ -85,8 +85,8 @@
             </div>
         </div>
     </section>
-    <section class="ia">
-        <h2>@lang('homepage.navbar.2')</h2>
+    <section id="ia" class="ia">
+        <h2>@lang('homepage.navbar.3')</h2>
         <div class="videoCtn">
             <video autoplay muted loop>
                 <source src="/videos/homepage/brain.mp4">
