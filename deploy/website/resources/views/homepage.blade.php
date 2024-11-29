@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <x-head :includeHomePage='true'></x-head>
 
 <body>
@@ -113,7 +111,8 @@
             </ul>
             <div class="iaLine"></div>
             <div class="iaGeminiLogo">
-                <a href="https://gemini.google.com/"><img class="geminiLogo" src="/images/brands/gemini.svg" alt="@lang('homepage.brandsAlt.gemini')"></a>
+                <a href="https://gemini.google.com/"><img class="geminiLogo" src="/images/brands/gemini.svg"
+                        alt="@lang('homepage.brandsAlt.gemini')"></a>
                 <p>@lang('homepage.iaSection.proposedGemini')</p>
             </div>
         </div>

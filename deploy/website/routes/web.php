@@ -15,10 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('homepage');
-});
+})->name('home');
+
 Route::get('/lang/{locale}', function ($locale) {
     if (in_array($locale, ['en', 'fr'])) {
         Session::put('locale', $locale);
     }
     return redirect()->back();
 })->name('change.language');
+
+Route::get('/register', function () {
+    return view('register');
+})->name('register');
