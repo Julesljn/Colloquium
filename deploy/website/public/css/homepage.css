@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Red_Hat', sans-serif;
-    background-color: var(--primaryColor);
+    background-color: black;
 }
 .parallaxe {
     padding-top: 50vh;
@@ -305,12 +305,15 @@ nav {
     text-decoration: underline;
 }
 footer {
-    padding: 40px 0 40px 0;
+    height: 180px;
+    /* padding: 40px 0 40px 0; */
     z-index: 0;
     background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
 }
 footer > ul {
     display: flex;
