@@ -59,16 +59,13 @@ nav {
     color: var(--secondaryColor);
     background-color: var(--primaryColor);
 }
-.earthIconCtn {
+.flagCtn {
     display: flex;
 }
-.earthIcon {
+.flag {
     width: 25px;
     height: 25px;
     transition: 0.2s;
-}
-.earthIcon:hover {
-    content: url('/images/icons/earthBlack.svg');
 }
 .home_textCtn {
     display: flex;

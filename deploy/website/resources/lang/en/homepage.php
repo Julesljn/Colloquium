@@ -4,7 +4,7 @@ return [
     'navbar' => [
         '1' => 'Partner',
         '2' => 'Services',
-        '3' => 'Intelligence Artificielle',
+        '3' => 'Artificial Intelligence',
         'login' => 'Login',
         'register' => 'Register',
     ],

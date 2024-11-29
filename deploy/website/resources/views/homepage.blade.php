@@ -12,9 +12,15 @@
         </ul>
         <ul class="headerBtn">
             <li>
-                <a class="earthIconCtn" href="">
-                    <img class="earthIcon" src="/images/icons/earthWhite.svg" alt="">
-                </a>
+                @if (App::getLocale() === 'fr')
+                    <a class="flagCtn" href="{{ route('change.language', ['locale' => 'en']) }}">
+                        <img class="flag" src="/images/icons/americanFlag.svg" alt="American Flag">
+                    </a>
+                @elseif (App::getLocale() === 'en')
+                    <a class="flagCtn" href="{{ route('change.language', ['locale' => 'fr']) }}">
+                        <img class="flag" src="/images/icons/frenchFlag.svg" alt="Drapeau Français">
+                    </a>
+                @endif
             </li>
             <li>
                 <a class="registerBtn" href="">@lang('homepage.navbar.register')</a>
