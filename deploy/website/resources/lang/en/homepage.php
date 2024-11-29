@@ -23,6 +23,7 @@ return [
         'xbox' => 'Logo of Xbox',
         'gemini' => 'Logo of Gemini',
     ],
+    'fakeBrand' => 'Fake brands',
     'servicesSection' => [
         'title' => 'Colloquium allows you to verify the authenticity of your candidates skills.',
         'subtitle' => 'Create personalized questions for your candidates, and our integrated artificial intelligence will analyze their responses with precision.',
@@ -36,12 +37,18 @@ return [
     ],
     'presentationPictureAlt' => 'Photo of the question creation panel on the website',
     'iaSection' => [
-    'title' => 'Colloquium: A Service Tailored to Your Needs',
-    'friendlyTagline' => [
-        '1' => 'Receive precise improvement points to guide your candidates.',
-        '2' => 'Discover what should have been said for a perfect response.',
-        '3' => 'Or keep it simple with a clear and effective overall score.',
+        'title' => 'Colloquium: A Service Tailored to Your Needs',
+        'friendlyTagline' => [
+            '1' => 'Receive precise improvement points to guide your candidates.',
+            '2' => 'Discover what should have been said for a perfect response.',
+            '3' => 'Or keep it simple with a clear and effective overall score.',
+        ],
+        'proposedGemini' => 'Powered by Gemini: a customizable AI for smart recruitment.',
     ],
-    'proposedGemini' => 'Powered by Gemini: a customizable AI for smart recruitment.',
-],
+    'footer' => [
+        '1' => 'Terms and Conditions',
+        '2' => 'Privacy Policy',
+        '3' => 'Legal Notice',
+    ],
+
 ];

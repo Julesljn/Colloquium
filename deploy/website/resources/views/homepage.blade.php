@@ -55,7 +55,7 @@
         </ul>
         <div class="brand_alertCtn">
             <span class="brand_alert">*</span>
-            <p class="brand_alert_text">Fake brands / Fausses marques</p>
+            <p class="brand_alert_text">@lang('homepage.fakeBrand')</p>
         </div>
     </section>
     <section class="services">
@@ -64,7 +64,6 @@
             <div class="servicesCtnText">
                 <p>@lang('homepage.servicesSection.title')</p>
                 <p>@lang('homepage.servicesSection.subtitle')</p>
-                {{-- <a href="">@lang('homepage.servicesSection.button')</a> --}}
                 <div class="servicesLine"></div>
                 <ul>
                     <li>
@@ -114,7 +113,18 @@
         </div>
     </section>
     <footer>
-
+        <x-logo-colloquium></x-logo-colloquium>
+        <ul>
+            <li>
+                <a href="">@lang('homepage.footer.1')</a>
+            </li>
+            <li>
+                <a href="">@lang('homepage.footer.2')</a>
+            </li>
+            <li>
+                <a href="">@lang('homepage.footer.3')</a>
+            </li>
+        </ul>
     </footer>
     <script src="/js/homepage.js"></script>
 </body>

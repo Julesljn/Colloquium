@@ -23,6 +23,7 @@ return [
         'xbox' => 'Logo de Xbox',
         'gemini' => 'Logo de Gemini',
     ],
+    'fakeBrand' => 'Fausses marques',
     'servicesSection' => [
         'title' => 'Colloquium vous offre la possibilité de vérifier l\'authenticité des compétences de vos candidats.',
         'subtitle' => 'Créez des questions personnalisées pour vos candidats, et notre intelligence artificielle intégrée analysera leurs réponses avec précision.',
@@ -43,5 +44,10 @@ return [
             '3' => 'Ou restez simple avec une note globale claire et efficace.',
         ],
         'proposedGemini' => 'Propulsé par Gemini : une IA configurable pour un recrutement intelligent.',
+    ],
+    'footer' => [
+        '1' => 'Conditions générales',
+        '2' => 'Confidentialité',
+        '3' => 'Mentions légales',
     ],
 ];
