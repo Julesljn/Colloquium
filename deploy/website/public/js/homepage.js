@@ -42,7 +42,7 @@ document.querySelectorAll('.logoTitleLink').forEach((logo) => {
 let isHidden = false;
 window.addEventListener('scroll', function() {
     const scrollPosition = window.scrollY;
-    const threshold = 1200;
+    const threshold = 100 * window.innerHeight / 100; // Convertit 12vh en pixels
 
     if (scrollPosition > threshold && !isHidden) {
         ctnParallaxe.style.display = 'none';
@@ -52,3 +52,6 @@ window.addEventListener('scroll', function() {
         isHidden = false;
     }
 });
+// supp le position fixed
+// Taille ecran em
+// vh
