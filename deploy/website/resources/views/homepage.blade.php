@@ -21,7 +21,7 @@
                 @endif
             </li>
             <li>
-                <a class="registerBtn" href="">@lang('homepage.navbar.register')</a>
+                <a class="registerBtn" href="/register">@lang('homepage.navbar.register')</a>
             </li>
         </ul>
     </nav>
@@ -34,7 +34,7 @@
         </header>
         <section id="home" class="home">
             <ul class="home_BtnCtn">
-                <li><a class="homeBtn" href="">@lang('homepage.navbar.register')</a></li>
+                <li><a class="homeBtn" href="/register">@lang('homepage.navbar.register')</a></li>
                 <li><a class="homeBtn" href="">@lang('homepage.navbar.login')</a></li>
             </ul>
             <div class="home_textCtn">
