@@ -7,8 +7,7 @@
         $styles = [
             'css/index.css',
             $includeHomePage ? 'css/homepage.css' : null,
-            $includeRegister ? 'css/register.css' : null,
-            $includeLogin ? 'css/login.css' : null,
+            $includeRegisterLogin ? 'css/register-login.css' : null,
         ];
     @endphp
 

@@ -1,4 +1,4 @@
-<x-head :includeRegister='true'></x-head>
+<x-head :includeRegisterLogin='true'></x-head>
 
 <body>
     <main>
