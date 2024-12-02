@@ -28,7 +28,11 @@ return [
         'empty' => 'Field required.',
         'date' => 'Invalid date format.',
         'phone' => 'Number (+33 xx xx xx xx xx).',
-        'email' => 'Email (e.g., test@test.com).',
-        'password' => 'Min: 1 uppercase, 1 lowercase, 1 digit.',
+        'email' => 'Invalid Email (test@test.com).',
+        'password' => 'Invalid Password (Min: 1 uppercase, 1 lowercase, 1 digit).',
+    ],
+    'select' => [
+        '1' => 'Man',
+        '2' => 'Woman',
     ],
 ];

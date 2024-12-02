@@ -31,4 +31,8 @@ return [
         'email' => 'Email invalide (ex : test@test.com).',
         'password' => 'Mot de passe invalide (1 maj, 1 min, 1 chiffre).',
     ],
+    'select' => [
+        '1' => 'Homme',
+        '2' => 'Femme',
+    ],
 ];
