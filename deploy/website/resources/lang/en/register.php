@@ -35,4 +35,5 @@ return [
         '1' => 'Man',
         '2' => 'Woman',
     ],
+    'switchForm' => 'Log In',
 ];

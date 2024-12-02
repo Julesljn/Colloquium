@@ -2,14 +2,14 @@
 
 <body>
     <main>
-        <div class="registerTextCtn">
+        <div class="textCtn">
             <h2>@lang('register.title')</h2>
             <p>@lang('register.subtitle')</p>
         </div>
-        <div class="registerFormCtn">
+        <div class="mainFormCtn">
             <x-logo-colloquium color='#1a1a1d'></x-logo-colloquium>
             <form action="" method="POST" class="formCtn">
-                <div class="registerDirectionCtn">
+                <div class="mainDirectionCtn">
                     <div class="directionCtn">
                         <div>
                             <label for="first_name">@lang('register.label.firstName')</label>
@@ -79,6 +79,7 @@
                     <button>@lang('register.submitBtn')</button>
                 </div>
             </form>
+            <a class="switchForm" href="/login">@lang('register.switchForm')</a>
         </div>
     </main>
     <script src="/js/register.js"></script>

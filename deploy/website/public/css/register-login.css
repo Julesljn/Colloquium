@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: var(--primaryColor);
 }
 input:focus, select:focus {
     outline: none;
@@ -11,9 +12,9 @@ main {
     height: 100vh;
 }
 
-.registerTextCtn {
+.textCtn {
     flex: 0 0 30%;
-    background-color: #1a1a1d;
+    background-color: var(--secondaryColor);
     color: white;
     position: relative;
     clip-path: polygon(0 0, 95% 0, 85% 100%, 0 100%);
@@ -27,13 +28,13 @@ main {
     font-family: 'Red_Hat', sans-serif;
 }
 
-.registerTextCtn h2 {
+.textCtn h2 {
     font-size: 2.2rem;
 }
-.registerTextCtn p {
+.textCtn p {
     font-size: 1.2rem;
 }
-.registerFormCtn {
+.mainFormCtn {
     width: 100%;
     padding: 20px;
     display: flex;
@@ -61,12 +62,12 @@ main {
     font-family: 'Red_Hat', sans-serif;
     font-size: 1em;
     border-radius: 7px;
-    border: 1px solid black;
+    border: 1px solid var(--secondaryColor);
 }
 .formCtn label {
     display: none;
 }
-.registerDirectionCtn {
+.mainDirectionCtn {
     display: flex;
     align-items: center;
     gap: 50px;
@@ -90,5 +91,16 @@ main {
 .errorCtn {
     height: 1vh;
     margin-top: 3px;
+    color: red;
+}
+.switchForm {
+    color: var(--secondaryColor);
+    font-family: 'Red_Hat', sans-serif;
+    text-decoration: underline;
+    font-size: 1.1em;
+}
+.loginErrorCtn {
+    height: 1vh;
+    margin-bottom: 50px;
     color: red;
 }

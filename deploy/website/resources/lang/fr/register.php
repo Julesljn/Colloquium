@@ -35,4 +35,5 @@ return [
         '1' => 'Homme',
         '2' => 'Femme',
     ],
+    'switchForm' => 'Se Connecter',
 ];
