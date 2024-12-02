@@ -63,11 +63,6 @@ nav {
 .flagCtn {
     display: flex;
 }
-.flag {
-    width: 25px;
-    height: 25px;
-    transition: 0.2s;
-}
 .home_textCtn {
     display: flex;
     flex-direction: column;

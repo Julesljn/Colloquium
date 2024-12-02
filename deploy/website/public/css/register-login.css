@@ -104,3 +104,9 @@ main {
     margin-bottom: 50px;
     color: red;
 }
+.flagCtn {
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    right: 0;
+}

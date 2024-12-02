@@ -30,3 +30,8 @@
 .logoTitleLink, .logoTitle {
     max-width: max-content;
 }
+.flag {
+    width: 25px;
+    height: 25px;
+    transition: 0.2s;
+}

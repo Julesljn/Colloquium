@@ -81,6 +81,19 @@
             </form>
             <a class="switchForm" href="/login">@lang('register.switchForm')</a>
         </div>
+        @if (App::getLocale() === 'fr')
+            <div class="flagCtn">
+                <a href="{{ route('change.language', ['locale' => 'en']) }}">
+                    <img class="flag" src="/images/icons/americanFlag.svg" alt="American Flag">
+                </a>
+            </div>
+        @elseif (App::getLocale() === 'en')
+            <div>
+                <a class="flagCtn" href="{{ route('change.language', ['locale' => 'fr']) }}">
+                    <img class="flag" src="/images/icons/frenchFlag.svg" alt="Drapeau Français">
+                </a>
+            </div>
+        @endif
     </main>
     <script src="/js/register.js"></script>
 </body>
