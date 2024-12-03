@@ -16,7 +16,7 @@ class User extends Authenticatable
      *
      * @var string
      */
-    protected $table = 'users'; // Par défaut, Laravel associera "User" au pluriel "users"
+    protected $table = 'users';
 
     /**
      * The attributes that are mass assignable.
@@ -24,16 +24,15 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'email',
-        'password',
         'first_name',
         'last_name',
+        'email',
+        'password',
         'birthday',
         'phone',
         'gender',
         'corporation',
-        'email_verified_at',
-        'email_verification_token',
+        'email_verification_code',
         'email_verification_expires_at',
     ];
 

@@ -13,19 +13,27 @@
                     <h2>@lang('register.activateCode')</h2>
                     <a href="">@lang('register.noCode')</a>
                 </div>
-                <div class="code-inputs">
-                    <input type="text" maxlength="1" class="code-input"/>
-                    <input type="text" maxlength="1" class="code-input"/>
-                    <input type="text" maxlength="1" class="code-input"/>
-                    <input type="text" maxlength="1" class="code-input"/>
-                    <input type="text" maxlength="1" class="code-input"/>
-                    <input type="text" maxlength="1" class="code-input"/>
-                </div>
-                <button id="submit-code">@lang('register.submitBtn')</button>
+                <form action="{{ route('verification.verify') }}" method="POST" id="verification-form">
+                    @csrf
+                    <div class="code-inputs">
+                        <input type="text" name="code[]" maxlength="1" class="code-input"/>
+                        <input type="text" name="code[]" maxlength="1" class="code-input"/>
+                        <input type="text" name="code[]" maxlength="1" class="code-input"/>
+                        <input type="text" name="code[]" maxlength="1" class="code-input"/>
+                        <input type="text" name="code[]" maxlength="1" class="code-input"/>
+                        <input type="text" name="code[]" maxlength="1" class="code-input"/>
+                    </div>
+                    <!-- Affichage des erreurs -->
+                    @if ($errors->has('code'))
+                        <div class="errorCtn">
+                            <span>{{ $errors->first('code') }}</span>
+                        </div>
+                    @endif
+                    <button type="submit" id="submit-code">@lang('register.submitBtn')</button>
+                </form>
             </div>
         </div>
     </main>
     <script src="/js/verificationCode.js"></script>
 </body>
-
 </html>

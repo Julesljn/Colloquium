@@ -46,6 +46,7 @@ return [
         '1' => 'Man',
         '2' => 'Woman',
     ],
+    // Code
     'switchForm' => 'Log In',
     'activateCode' => 'Please activate your account by entering the code you received via email.',
     'noCode' => 'Didn\'t receive a code?',
