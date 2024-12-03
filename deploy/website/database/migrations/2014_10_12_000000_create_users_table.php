@@ -20,9 +20,9 @@ return new class extends Migration
             $table->date('birthday');
             $table->string('phone')->unique();
             $table->enum('gender', ['male', 'female']);
-            $table->string('corporation');
+            $table->string('corporation')->nullable();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('email_verification_token', 64)->nullable();
+            $table->string('email_verification_code', 6)->nullable();
             $table->timestamp('email_verification_expires_at')->nullable();
             $table->timestamps();
         });

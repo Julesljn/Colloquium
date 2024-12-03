@@ -33,4 +33,8 @@ Route::get('/login', function () {
     return view('login');
 })->name('login');
 
+Route::get('/verif', function () {
+    return view('verificationCode');
+})->name('verif');
+
 Route::post('/user/register', [UserController::class, 'store'])->name('register.store');

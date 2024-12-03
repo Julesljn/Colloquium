@@ -47,4 +47,7 @@ return [
         '2' => 'Femme',
     ],
     'switchForm' => 'Se Connecter',
+    'activateCode' => 'Pour activer votre compte taper le code reçu par mail',
+    'noCode' => 'Voud n\'avez pas reçu de code ?',
+    'submitCode' => 'Confirmer',
 ];

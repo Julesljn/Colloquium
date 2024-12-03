@@ -1,12 +1,16 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
     background-color: var(--primaryColor);
 }
-input:focus, select:focus {
+
+input:focus,
+select:focus {
     outline: none;
 }
+
 main {
     display: flex;
     height: 100vh;
@@ -31,9 +35,11 @@ main {
 .textCtn h2 {
     font-size: 2.2rem;
 }
+
 .textCtn p {
     font-size: 1.2rem;
 }
+
 .mainFormCtn {
     width: 100%;
     padding: 20px;
@@ -41,6 +47,7 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
 .formCtn {
     display: flex;
     flex-direction: column;
@@ -48,13 +55,16 @@ main {
     justify-content: center;
     height: 100%;
 }
+
 .directionCtn {
     display: flex;
     flex-direction: column;
     width: 50%;
     gap: 40px;
 }
-.formCtn input, select {
+
+.formCtn input,
+select {
     padding: 8px 8px;
     height: 4.4vh;
     width: 20vw;
@@ -64,21 +74,25 @@ main {
     border-radius: 7px;
     border: 1px solid var(--secondaryColor);
 }
+
 .formCtn label {
     display: none;
 }
+
 .mainDirectionCtn {
     display: flex;
     align-items: center;
     gap: 50px;
 }
+
 .btnCtn {
     width: 100%;
     margin: 60px 0 0 0;
     display: flex;
     justify-content: flex-end;
 }
-.btnCtn button {
+
+.btnCtn button, #submit-code {
     font-size: 1.1em;
     padding: 8px 16px;
     color: var(--primaryColor);
@@ -88,25 +102,74 @@ main {
     border: none;
     cursor: pointer;
 }
+
 .errorCtn {
     height: 1vh;
     margin-top: 3px;
     color: red;
 }
+
 .switchForm {
     color: var(--secondaryColor);
     font-family: 'Red_Hat', sans-serif;
     text-decoration: underline;
     font-size: 1.1em;
 }
+
 .loginErrorCtn {
     height: 1vh;
     margin-bottom: 50px;
     color: red;
 }
+
 .flagCtn {
     position: absolute;
     padding: 20px;
     top: 0;
     right: 0;
+}
+
+/* Verification Code */
+
+.code-inputs {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.code-input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.code-input:focus {
+    border-color: var(--secondaryColor);
+    outline: none;
+}
+.ctnVerifCodeText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.ctnVerifCodeText a {
+    color: var(--secondaryColor);
+    text-decoration: underline;
+}
+.ctnVerifCode {
+    font-family: 'Red_Hat', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.code-inputs {
+    margin: 80px 0;
 }

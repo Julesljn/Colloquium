@@ -29,7 +29,7 @@ class StoreUserRequest extends FormRequest
             'birthday' => 'required|date',
             'phone' => 'required|string|unique:users,phone',
             'gender' => 'required|in:male,female',
-            'corporation' => 'required|string|max:255',
+            'corporation' => 'nullable|string|max:255',
         ];
     }
     public function messages()
