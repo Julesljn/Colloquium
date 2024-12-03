@@ -25,12 +25,23 @@ return [
     ],
     'submitBtn' => 'Sign up',
     'inputError' => [
-        'empty' => 'Field required.',
-        'date' => 'Invalid date format.',
-        'phone' => 'Number (+33 xx xx xx xx xx).',
-        'email' => 'Invalid Email (test@test.com).',
-        'password' => 'Invalid Password (Min: 1 uppercase, 1 lowercase, 1 digit).',
+        'empty' => 'Field is required.',
+        'date_invalid' => 'The entered date is invalid.',
+        'phone_invalid' => 'Invalid phone format (+33 xx xx xx xx xx).',
+        'email_invalid' => 'Invalid email format (e.g., test@test.com).',
+        'password_weak' => 'Password is too weak (1UPPER, 1lower, 1 number).',
+
+        'email_unique' => 'This email is already in use.',
+        'password_short' => 'The password must be at least :min characters long.',
+        'phone_unique' => 'This phone number is already in use.',
+        'gender_required' => 'Please select a gender.',
+        'birthday_past' => 'The birthdate must be in the past.',
+        'corporation_long' => 'The company name is too long.',
+        'input_too_long' => 'The input exceeds the maximum allowed limit of :max characters.',
+        'input_too_short' => 'The input must be at least :min characters long.',
+        'invalid_choice' => 'The selected option is invalid.',
     ],
+
     'select' => [
         '1' => 'Man',
         '2' => 'Woman',
