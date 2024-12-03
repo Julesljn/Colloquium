@@ -63,6 +63,9 @@ nav {
 .flagCtn {
     display: flex;
 }
+.flagCtn a {
+    display: flex;
+}
 .home_textCtn {
     display: flex;
     flex-direction: column;

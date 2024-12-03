@@ -11,14 +11,18 @@
         <ul class="headerBtn">
             <li>
                 @if (App::getLocale() === 'fr')
-                    <a class="flagCtn" href="{{ route('change.language', ['locale' => 'en']) }}">
-                        <img class="flag" src="/images/icons/americanFlag.svg" alt="American Flag">
-                    </a>
-                @elseif (App::getLocale() === 'en')
-                    <a class="flagCtn" href="{{ route('change.language', ['locale' => 'fr']) }}">
-                        <img class="flag" src="/images/icons/frenchFlag.svg" alt="Drapeau Français">
-                    </a>
-                @endif
+            <div class="flagCtn">
+                <a href="{{ route('change.language', ['locale' => 'en']) }}">
+                    <img class="flag" src="/images/icons/americanFlag.svg" alt="American Flag">
+                </a>
+            </div>
+        @elseif (App::getLocale() === 'en')
+            <div>
+                <a class="flagCtn" href="{{ route('change.language', ['locale' => 'fr']) }}">
+                    <img class="flag" src="/images/icons/frenchFlag.svg" alt="Drapeau Français">
+                </a>
+            </div>
+        @endif
             </li>
             <li>
                 <a class="registerBtn" href="/register">@lang('homepage.navbar.register')</a>
