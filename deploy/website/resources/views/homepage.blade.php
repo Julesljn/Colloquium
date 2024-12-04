@@ -132,10 +132,10 @@
                 <a href="{{ route('terms') }}">@lang('homepage.footer.1')</a>
             </li>
             <li>
-                <a href="">@lang('homepage.footer.2')</a>
+                <a href="{{ route('privacy') }}">@lang('homepage.footer.2')</a>
             </li>
             <li>
-                <a href="">@lang('homepage.footer.3')</a>
+                <a href="{{ route('legal_notice') }}">@lang('homepage.footer.3')</a>
             </li>
         </ul>
     </footer>

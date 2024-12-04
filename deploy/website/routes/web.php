@@ -33,6 +33,14 @@ Route::get('/terms', function () {
     return view('legal.terms');
 })->name('terms');
 
+Route::get('/privacy', function () {
+    return view('legal.privacy');
+})->name('privacy');
+
+Route::get('/legal-notice', function () {
+    return view('legal.legal_notice');
+})->name('legal_notice');
+
 Route::post('/user/register', [UserController::class, 'store'])->name('register.store');
 
 Route::middleware('auth')->group(function () {
