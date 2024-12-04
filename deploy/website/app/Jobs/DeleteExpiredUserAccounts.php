@@ -34,8 +34,6 @@ class DeleteExpiredUserAccounts implements ShouldQueue
                             ->whereNull('email_verified_at')
                             ->get();
 
-        Log::info('Nombre d\'utilisateurs expirés trouvés : ' . $expiredUsers->count());
-
         foreach ($expiredUsers as $user) {
             $user->delete();
         }
