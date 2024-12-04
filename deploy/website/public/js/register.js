@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setupValidation('password', isValidPassword),
         setupValidation('phone', isValidPhoneNumber)
     ];
-    
+
     function setupValidation(fieldId, validator) {
         return {
             element: document.getElementById(fieldId),

@@ -44,7 +44,7 @@ const ctnParallaxe = document.querySelector('.parallaxe');
 let isHidden = false;
 
 if (ctnParallaxe) {
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         const scrollPosition = window.scrollY;
         const threshold = 100 * window.innerHeight / 100; // Convert 12vh to pixels
 
