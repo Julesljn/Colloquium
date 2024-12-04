@@ -10,7 +10,6 @@ class EmailVerificationService
 {
     public function verifyCode($codeArray)
     {
-        // Validation du code
         if (count($codeArray) !== 6 || in_array(null, $codeArray, true) || in_array('', $codeArray, true)) {
             return ['error' => 'Veuillez remplir tous les champs du code.'];
         }
@@ -23,7 +22,6 @@ class EmailVerificationService
 
         $user = Auth::user();
 
-        // Vérification du code et expiration
         if ($user->email_verification_code === $code && now()->lessThanOrEqualTo($user->email_verification_expires_at)) {
             $user->email_verified_at = now();
             $user->email_verification_code = null;
