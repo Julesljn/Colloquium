@@ -20,6 +20,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: "Hind";
+    src: url('../fonts/Hind_Siliguri/HindSiliguri-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 .vanish {
     display: none !important;
 }

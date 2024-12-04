@@ -33,7 +33,7 @@
         </div>
         <x-langue-switcher></x-langue-switcher>
     </main>
-    <script src="/js/login.js"></script>
+    <script src="{{ asset('js/login.js') }}"></script>
 </body>
 
 </html>

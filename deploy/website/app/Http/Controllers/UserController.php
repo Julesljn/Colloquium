@@ -38,9 +38,7 @@ class UserController extends Controller
         ]);
 
         Mail::to($user->email)->send(new VerifyEmailCode($verificationCode));
-
         Auth::login($user);
-
         return redirect()->route('verification.code')->with('success', 'Un email de vérification vous a été envoyé.');
     }
 

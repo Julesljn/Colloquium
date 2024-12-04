@@ -34,7 +34,7 @@
             </div>
         </div>
     </main>
-    <script src="/js/verificationCode.js"></script>
+    <script src="{{ asset('js/verificationCode.js') }}"></script>
 </body>
 
 </html>

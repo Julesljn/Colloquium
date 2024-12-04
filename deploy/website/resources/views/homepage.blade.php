@@ -139,7 +139,7 @@
             </li>
         </ul>
     </footer>
-    <script src="/js/homepage.js"></script>
+    <script src="{{ asset('js/homepage.js') }}"></script>
 </body>
 
 </html>

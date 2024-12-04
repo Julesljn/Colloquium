@@ -108,7 +108,7 @@
         </div>
         <x-langue-switcher></x-langue-switcher>
     </main>
-    <script src="/js/register.js"></script>
+    <script src="{{ asset('js/register.js') }}"></script>
 </body>
 
 </html>
