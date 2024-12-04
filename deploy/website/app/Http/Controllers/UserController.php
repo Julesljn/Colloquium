@@ -3,15 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreUserRequest;
+use App\Mail\VerifyEmailCode;
 use App\Models\User;
+use App\Services\EmailVerificationService;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\VerifyEmailCode;
-use App\Http\Requests\StoreUserRequest;
-use Auth;
 
 class UserController extends Controller
 {
+    protected $verificationService;
+
+    public function __construct(EmailVerificationService $verificationService)
+    {
+        $this->verificationService = $verificationService;
+    }
+
     public function store(StoreUserRequest $request)
     {
         $verificationCode = random_int(100000, 999999);
@@ -35,37 +43,24 @@ class UserController extends Controller
 
         return redirect()->route('verification.code')->with('success', 'Un email de vérification vous a été envoyé.');
     }
+
     public function showVerificationForm()
     {
         return view('verificationCode');
     }
+
     public function verify(Request $request)
     {
-        $codeArray = $request->input('code');
+        $result = $this->verificationService->verifyCode($request->input('code'));
 
-        if (count($codeArray) !== 6 || in_array(null, $codeArray, true) || in_array('', $codeArray, true)) {
-            return back()->withErrors(['code' => 'Veuillez remplir tous les champs du code.']);
+        if (isset($result['error'])) {
+            return back()->withErrors(['code' => $result['error']]);
         }
 
-        $code = implode('', $codeArray);
-
-        if (!preg_match('/^\d{6}$/', $code)) {
-            return back()->withErrors(['code' => 'Le code doit être un nombre à 6 chiffres.']);
-        }
-
-        $user = Auth::user();
-
-        if ($user->email_verification_code === $code && now()->lessThanOrEqualTo($user->email_verification_expires_at)) {
-            $user->email_verified_at = now();
-            $user->email_verification_code = null;
-            $user->email_verification_expires_at = null;
-            $user->save();
-
-            return redirect()->route('home');
-        } else {
-            return back()->withErrors(['code' => 'Le code est invalide ou a expiré.']);
-        }
+        return redirect()->route('home')->with('success', $result['success']);
     }
+
+
     public function logout(Request $request)
     {
         Auth::logout();
