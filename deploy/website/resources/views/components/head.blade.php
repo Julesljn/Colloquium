@@ -8,6 +8,7 @@
             'css/index.css',
             $includeHomePage ? 'css/homepage.css' : null,
             $includeRegisterLogin ? 'css/register-login.css' : null,
+            $includeLegal ? 'css/legal.css' : null,
         ];
     @endphp
 

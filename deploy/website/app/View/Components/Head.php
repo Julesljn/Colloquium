@@ -9,17 +9,18 @@ use Illuminate\View\Component;
 class Head extends Component
 {
    public $title;
-   public $includeAnimatedBackground;
    public $includeHomePage;
    public $includeRegisterLogin;
+   public $includeLegal;
     /**
      * Create a new component instance.
      */
-    public function __construct($title = 'Colloquium', $includeHomePage = false, $includeRegisterLogin = false,)
+    public function __construct($title = 'Colloquium', $includeHomePage = false, $includeRegisterLogin = false, $includeLegal = false)
     {
         $this->title = $title;
         $this->includeHomePage = $includeHomePage;
         $this->includeRegisterLogin = $includeRegisterLogin;
+        $this->includeLegal = $includeLegal;
 
     }
 

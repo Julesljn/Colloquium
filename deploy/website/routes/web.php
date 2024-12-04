@@ -29,6 +29,10 @@ Route::get('/register', function () {
     return view('register');
 })->name('register');
 
+Route::get('/terms', function () {
+    return view('legal.terms');
+})->name('terms');
+
 Route::post('/user/register', [UserController::class, 'store'])->name('register.store');
 
 Route::middleware('auth')->group(function () {

@@ -129,7 +129,7 @@
         <x-logo-colloquium></x-logo-colloquium>
         <ul>
             <li>
-                <a href="">@lang('homepage.footer.1')</a>
+                <a href="{{ route('terms') }}">@lang('homepage.footer.1')</a>
             </li>
             <li>
                 <a href="">@lang('homepage.footer.2')</a>
