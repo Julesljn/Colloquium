@@ -7,6 +7,8 @@ return [
         '3' => 'Intelligence Artificielle',
         'login' => 'Se Connecter',
         'register' => 'Inscription',
+        'disconnect' => 'Déconnexion',
+        'dashboard' => 'Dashboard',
     ],
     'homeSection' => [
         'subtitle' => 'Des entretients plus efficace',

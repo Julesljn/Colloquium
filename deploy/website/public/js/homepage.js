@@ -1,17 +1,18 @@
+// Alert Fake Brands
 const iconAlert = document.querySelector('.brand_alert');
 const textAlert = document.querySelector('.brand_alert_text');
-const ctnParallaxe = document.querySelector('.parallaxe');
 
-// Alert Fake Brands
-iconAlert.addEventListener('mouseenter', () => {
-    textAlert.classList.add('activeAlert');
-});
-iconAlert.addEventListener('mouseleave', () => {
-    textAlert.classList.remove('activeAlert');
-});
+if (iconAlert && textAlert) {
+    iconAlert.addEventListener('mouseenter', () => {
+        textAlert.classList.add('activeAlert');
+    });
+    iconAlert.addEventListener('mouseleave', () => {
+        textAlert.classList.remove('activeAlert');
+    });
+}
 
 // Navigation NavBar
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]:not(#logout-button)').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const targetId = this.getAttribute('href');
@@ -39,16 +40,20 @@ document.querySelectorAll('.logoTitleLink').forEach((logo) => {
 });
 
 // Delete Parallaxe
+const ctnParallaxe = document.querySelector('.parallaxe');
 let isHidden = false;
-window.addEventListener('scroll', function() {
-    const scrollPosition = window.scrollY;
-    const threshold = 100 * window.innerHeight / 100; // Convert 12vh to pixels
 
-    if (scrollPosition > threshold && !isHidden) {
-        ctnParallaxe.style.display = 'none';
-        isHidden = true;
-    } else if (scrollPosition <= threshold && isHidden) {
-        ctnParallaxe.style.display = 'block';
-        isHidden = false;
-    }
-});
+if (ctnParallaxe) {
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+        const threshold = 100 * window.innerHeight / 100; // Convert 12vh to pixels
+
+        if (scrollPosition > threshold && !isHidden) {
+            ctnParallaxe.style.display = 'none';
+            isHidden = true;
+        } else if (scrollPosition <= threshold && isHidden) {
+            ctnParallaxe.style.display = 'block';
+            isHidden = false;
+        }
+    });
+}

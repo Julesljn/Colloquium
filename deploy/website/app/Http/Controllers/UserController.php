@@ -61,9 +61,18 @@ class UserController extends Controller
             $user->email_verification_expires_at = null;
             $user->save();
 
-            return redirect()->route('home')->with('success', 'Votre email a été vérifié avec succès.');
+            return redirect()->route('home');
         } else {
             return back()->withErrors(['code' => 'Le code est invalide ou a expiré.']);
         }
+    }
+    public function logout(Request $request)
+    {
+        Auth::logout();
+
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect('/');
     }
 }

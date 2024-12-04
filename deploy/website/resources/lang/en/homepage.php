@@ -7,10 +7,11 @@ return [
         '3' => 'Artificial Intelligence',
         'login' => 'Login',
         'register' => 'Register',
+        'disconnect' => 'Disconnect',
     ],
     'homeSection' => [
         'subtitle' => 'More effective interviews',
-        'text' => 'A simple solution to enhance the efficiency of<br> your hiring interviews.'
+        'text' => 'A simple solution to enhance the efficiency of<br> your hiring interviews.',
     ],
     'brandsAlt' => [
         'alstom' => 'Logo of Alstom',

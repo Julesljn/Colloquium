@@ -52,7 +52,7 @@ class StoreUserRequest extends FormRequest
             'phone.regex' => __('register.inputError.phone_invalid'),
             'phone.unique' => __('register.inputError.phone_unique'),
             'gender.required' => __('register.inputError.gender_required'),
-            'corporation.max' => __('register.inputError.corporation_long'),
+            'corporation.max' => __('register.inputError.corporation_long', ['max' => 255]),
         ];
     }
 }

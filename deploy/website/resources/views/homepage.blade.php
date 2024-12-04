@@ -12,9 +12,24 @@
             <li>
                 <x-langue-switcher></x-langue-switcher>
             </li>
-            <li>
-                <a class="registerBtn" href="/register">@lang('homepage.navbar.register')</a>
-            </li>
+            @auth
+                <li>
+                    <a class="navBarBtn" href="/">@lang('homepage.navbar.dashboard')</a>
+                </li>
+                <li>
+                    <form id="logout-form" method="POST" action="{{ route('user.logout') }}" style="display: inline;">
+                        @csrf
+                        <button type="submit" class="navBarBtn">
+                            @lang('homepage.navbar.disconnect')
+                        </button>
+                    </form>
+                </li>
+            @endauth
+            @guest
+                <li>
+                    <a class="navBarBtn" href="/register">@lang('homepage.navbar.register')</a>
+                </li>
+            @endguest
         </ul>
     </nav>
 
@@ -38,7 +53,8 @@
     </div>
     <section id="brands" class="brands">
         <ul>
-            <li><a href="https://www.alstom.com/"><img src="/images/brands/alstom.svg" alt="@lang('homepage.brandsAlt.alstom')"></a></li>
+            <li><a href="https://www.alstom.com/"><img src="/images/brands/alstom.svg" alt="@lang('homepage.brandsAlt.alstom')"></a>
+            </li>
             <li><a href="https://www.apple.com/"><img src="/images/brands/apple.svg" alt="@lang('homepage.brandsAlt.apple')"></a></li>
             <li><a href="https://www.coca-cola.com/"><img src="/images/brands/coca-cola.svg"
                         alt="@lang('homepage.brandsAlt.coca')"></a></li>
