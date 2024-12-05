@@ -41,8 +41,15 @@
         </header>
         <section id="home" class="home">
             <ul class="home_BtnCtn">
-                <li><a class="homeBtn" href="/register">@lang('homepage.navbar.register')</a></li>
-                <li><a class="homeBtn" href="/login">@lang('homepage.navbar.login')</a></li>
+                @guest
+                    <li><a class="homeBtn" href="/register">@lang('homepage.navbar.register')</a></li>
+                    <li><a class="homeBtn" href="/login">@lang('homepage.navbar.login')</a></li>
+                @endguest
+                @auth
+                    <li>
+                        <p class="welcomeText">@lang('homepage.welcome', ['first_name' => Auth::user()->first_name, 'last_name' => Auth::user()->last_name])</p>
+                    </li>
+                @endauth
             </ul>
             <div class="home_textCtn">
                 <x-logo-colloquium></x-logo-colloquium>

@@ -52,5 +52,5 @@ return [
         '2' => 'Privacy Policy',
         '3' => 'Legal Notice',
     ],
-
+    'welcome' => 'Welcome :first_name :last_name !',
 ];

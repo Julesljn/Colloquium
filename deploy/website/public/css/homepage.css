@@ -383,6 +383,12 @@ footer>ul {
 footer>ul li a {
     color: var(--primaryColor);
 }
+
 footer>ul li a:hover {
     text-decoration: underline;
+}
+
+.welcomeText {
+    color: var(--primaryColor);
+    font-size: 2em;
 }

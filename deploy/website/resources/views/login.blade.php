@@ -8,20 +8,23 @@
         </div>
         <div class="mainFormCtn">
             <x-logo-colloquium color='#1a1a1d'></x-logo-colloquium>
-            <form action="" method="" class="formCtn">
+            <form action="{{ route('user.login') }}" method="POST" class="formCtn">
+                @csrf
                 <div class="loginErrorCtn">
-                    <span class="vanish">@lang('login.inputError')</span>
+                    <span class="{{ $errors->has('login') ? '' : 'vanish' }}">
+                        {{ $errors->has('login') ? $errors->first('login') : __('login.inputError') }}
+                    </span>
                 </div>
                 <div class="mainDirectionCtn">
                     <div class="directionCtn">
                         <div>
                             <label for="email">@lang('login.label.email')</label>
-                            <input type="email" name="email" id="email" placeholder="@lang('login.placeholder.email')">
+                            <input type="email" name="email" id="email" placeholder="@lang('login.placeholder.email')"
+                                value="{{ old('email') }}">
                         </div>
                         <div>
                             <label for="password">@lang('login.label.password')</label>
                             <input type="password" name="password" id="password" placeholder="@lang('login.placeholder.password')">
-                            
                         </div>
                     </div>
                 </div>

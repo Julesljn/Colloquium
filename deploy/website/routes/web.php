@@ -46,6 +46,8 @@ Route::get('/legal-notice', function () {
 })->name('legal_notice');
 
 Route::post('/user/register', [UserController::class, 'store'])->name('register.store');
+Route::post('/user/login', [UserController::class, 'login'])->name('user.login');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/email/verification-code', [UserController::class, 'showVerificationForm'])->name('verification.code');

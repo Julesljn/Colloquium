@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreUserRequest;
+use App\Http\Requests\LoginUserRequest;
 use App\Mail\VerifyEmailCode;
 use App\Models\User;
 use App\Services\EmailVerificationService;
@@ -11,7 +12,6 @@ use App\Services\CodeRegisterGeneratorService;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
-
 class UserController extends Controller
 {
     protected $verificationService;
@@ -74,7 +74,7 @@ class UserController extends Controller
 
         Mail::to($user->email)->send(new VerifyEmailCode($newVerificationCode));
 
-        return redirect()->route('verification.code')->with('success', 'Un email de vérification vous a été envoyé.');
+        return redirect()->route('verification.code');
     }
 
     public function logout(Request $request)
@@ -86,5 +86,17 @@ class UserController extends Controller
 
         return redirect('/');
     }
-    
+    public function login(LoginUserRequest $request)
+    {
+        $credentials = $request->only('email', 'password');
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect()->route('home');
+        }
+
+        return back()->withErrors([
+            'login' => __('login.inputError'),
+        ])->withInput();
+    }
 }

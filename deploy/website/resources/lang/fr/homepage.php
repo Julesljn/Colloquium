@@ -52,4 +52,5 @@ return [
         '2' => 'Confidentialité',
         '3' => 'Mentions légales',
     ],
+    'welcome' => 'Bienvenue :first_name :last_name !',
 ];
