@@ -13,4 +13,5 @@ return [
     ],
     'submitBtn' => 'Se connecter',
     'switchForm' => 'S\'inscrire',
+    'inputError' => 'Adresse email ou mot de passe invalide',
 ];

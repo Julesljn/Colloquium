@@ -13,4 +13,5 @@ return [
     ],
     'submitBtn' => 'Log in',
     'switchForm' => 'Sign Up',
+    'inputError' => 'Invalid email address or password',
 ];

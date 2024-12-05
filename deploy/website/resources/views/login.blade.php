@@ -8,9 +8,9 @@
         </div>
         <div class="mainFormCtn">
             <x-logo-colloquium color='#1a1a1d'></x-logo-colloquium>
-            <form action="" method="POST" class="formCtn">
+            <form action="" method="" class="formCtn">
                 <div class="loginErrorCtn">
-                    <span class="vanish">Adresse email ou mot de passe invalide</span>
+                    <span class="vanish">@lang('login.inputError')</span>
                 </div>
                 <div class="mainDirectionCtn">
                     <div class="directionCtn">
