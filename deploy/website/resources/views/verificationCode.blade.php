@@ -11,7 +11,7 @@
             <div class="ctnVerifCode">
                 <div class="ctnVerifCodeText">
                     <h2>@lang('register.activateCode')</h2>
-                    <a href="">@lang('register.noCode')</a>
+                    <a href="{{ route('verification.reset') }}">@lang('register.noCode')</a>
                 </div>
                 <form class="formValidationCode" action="{{ route('verification.verify') }}" method="POST"
                     id="verification-form">
