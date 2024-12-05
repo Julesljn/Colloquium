@@ -14,7 +14,7 @@
                     <div class="directionCtn">
                         <div>
                             <label for="first_name">@lang('register.label.firstName')</label>
-                            <input type="text" name="first_name" id="first_name" value="{{ old('first_name') }}"
+                            <input type="text" name="first_name" id="first_name" value="{{ old('first_name') }}" {{-- #6936381 --}}
                                 placeholder="@lang('register.placeholder.firstName')">
                             <div class="errorCtn">
                                 <span class="{{ $errors->has('first_name') ? '' : 'vanish' }}">

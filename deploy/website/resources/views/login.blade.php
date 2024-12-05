@@ -20,7 +20,7 @@
                         <div>
                             <label for="email">@lang('login.label.email')</label>
                             <input type="email" name="email" id="email" placeholder="@lang('login.placeholder.email')"
-                                value="{{ old('email') }}">
+                                value="{{ old('email') }}"> {{-- #6936381 --}}
                         </div>
                         <div>
                             <label for="password">@lang('login.label.password')</label>

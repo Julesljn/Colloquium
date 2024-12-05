@@ -32,6 +32,7 @@ class StoreUserRequest extends FormRequest
             'corporation' => 'nullable|string|max:255',
         ];
     }
+    // #6936381
     public function messages()
     {
         return [

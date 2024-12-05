@@ -25,5 +25,5 @@ class LoginUserRequest extends FormRequest
             'email' => 'required|email',
             'password' => 'required|min:6',
         ];
-    }
+    } // #6936381
 }

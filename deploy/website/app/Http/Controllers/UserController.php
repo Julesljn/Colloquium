@@ -97,6 +97,6 @@ class UserController extends Controller
 
         return back()->withErrors([
             'login' => __('login.inputError'),
-        ])->withInput();
+        ])->withInput(); // #6936381
     }
 }

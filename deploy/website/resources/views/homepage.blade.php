@@ -27,7 +27,7 @@
             @endauth
             @guest
                 <li>
-                    <a class="navBarBtn" href="/register">@lang('homepage.navbar.register')</a>
+                    <a class="navBarBtn" href="{{ route('register') }}">@lang('homepage.navbar.register')</a>
                 </li>
             @endguest
         </ul>
@@ -42,8 +42,8 @@
         <section id="home" class="home">
             <ul class="home_BtnCtn">
                 @guest
-                    <li><a class="homeBtn" href="/register">@lang('homepage.navbar.register')</a></li>
-                    <li><a class="homeBtn" href="/login">@lang('homepage.navbar.login')</a></li>
+                    <li><a class="homeBtn" href="{{ route('register') }}">@lang('homepage.navbar.register')</a></li>
+                    <li><a class="homeBtn" href="{{ route('login') }}">@lang('homepage.navbar.login')</a></li>
                 @endguest
                 @auth
                     <li>
@@ -100,7 +100,7 @@
                 </ul>
             </div>
             <div class="servicesCtnImg">
-                <img src="/images/homepage/presentation.png" alt="@lang('homepage.presentationPictureAlt')">
+                <img src="(/images/homepage/presentation.png)" alt="@lang('homepage.presentationPictureAlt')">
             </div>
         </div>
     </section>
