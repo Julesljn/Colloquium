@@ -8,6 +8,7 @@ return [
         'login' => 'Login',
         'register' => 'Register',
         'disconnect' => 'Disconnect',
+        'dashboard' => 'Dashboard',
     ],
     'homeSection' => [
         'subtitle' => 'More effective interviews',

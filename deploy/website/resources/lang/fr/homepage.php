@@ -8,7 +8,7 @@ return [
         'login' => 'Se Connecter',
         'register' => 'Inscription',
         'disconnect' => 'Déconnexion',
-        'dashboard' => 'Dashboard',
+        'dashboard' => 'Tableau de Bord',
     ],
     'homeSection' => [
         'subtitle' => 'Des entretients plus efficace',
