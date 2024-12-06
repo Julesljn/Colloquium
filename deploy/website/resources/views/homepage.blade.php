@@ -36,7 +36,7 @@
     <div class="parallaxe">
         <header>
             <video class="headerVideo" autoplay muted loop>
-                <source src="/videos/homepage/headerHomepage.mp4">
+                <source src="{{ asset('videos/homepage/headerHomepage.mp4') }}">
             </video>
         </header>
         <section id="home" class="home">
@@ -60,17 +60,14 @@
     </div>
     <section id="brands" class="brands">
         <ul>
-            <li><a href="https://www.alstom.com/"><img src="/images/brands/alstom.svg" alt="@lang('homepage.brandsAlt.alstom')"></a>
-            </li>
-            <li><a href="https://www.apple.com/"><img src="/images/brands/apple.svg" alt="@lang('homepage.brandsAlt.apple')"></a></li>
-            <li><a href="https://www.coca-cola.com/"><img src="/images/brands/coca-cola.svg"
-                        alt="@lang('homepage.brandsAlt.coca')"></a></li>
-            <li><a href="https://github.com/"><img src="/images/brands/github.svg" alt="@lang('homepage.brandsAlt.github')"></a></li>
-            <li><a href="https://www.meta.com/"><img src="/images/brands/meta.svg" alt="@lang('homepage.brandsAlt.meta')"></a></li>
-            <li><a href="https://www.nike.com/"><img src="/images/brands/nike.svg" alt="@lang('homepage.brandsAlt.nike')"></a></li>
-            <li><a href="https://www.tiktok.com/"><img src="/images/brands/tiktok.svg" alt="@lang('homepage.brandsAlt.tiktok')"></a>
-            </li>
-            <li><a href="https://www.xbox.com/"><img src="/images/brands/xbox.svg" alt="@lang('homepage.brandsAlt.xbox')"></a></li>
+            <li><a href="https://www.alstom.com/"><img src="{{ asset('images/brands/alstom.svg') }}" alt="@lang('homepage.brandsAlt.alstom')"></a></li>
+            <li><a href="https://www.apple.com/"><img src="{{ asset('images/brands/apple.svg') }}" alt="@lang('homepage.brandsAlt.apple')"></a></li>
+            <li><a href="https://www.coca-cola.com/"><img src="{{ asset('images/brands/coca-cola.svg') }}" alt="@lang('homepage.brandsAlt.coca')"></a></li>
+            <li><a href="https://github.com/"><img src="{{ asset('images/brands/github.svg') }}" alt="@lang('homepage.brandsAlt.github')"></a></li>
+            <li><a href="https://www.meta.com/"><img src="{{ asset('images/brands/meta.svg') }}" alt="@lang('homepage.brandsAlt.meta')"></a></li>
+            <li><a href="https://www.nike.com/"><img src="{{ asset('images/brands/nike.svg') }}" alt="@lang('homepage.brandsAlt.nike')"></a></li>
+            <li><a href="https://www.tiktok.com/"><img src="{{ asset('images/brands/tiktok.svg') }}" alt="@lang('homepage.brandsAlt.tiktok')"></a></li>
+            <li><a href="https://www.xbox.com/"><img src="{{ asset('images/brands/xbox.svg') }}" alt="@lang('homepage.brandsAlt.xbox')"></a></li>
         </ul>
         <div class="brand_alertCtn">
             <span class="brand_alert">*</span>
@@ -100,7 +97,7 @@
                 </ul>
             </div>
             <div class="servicesCtnImg">
-                <img src="(/images/homepage/presentation.png)" alt="@lang('homepage.presentationPictureAlt')">
+                <img src="{{ asset('images/homepage/presentation.png') }}" alt="@lang('homepage.presentationPictureAlt')">
             </div>
         </div>
     </section>
@@ -108,7 +105,7 @@
         <h2>@lang('homepage.navbar.3')</h2>
         <div class="videoCtn">
             <video autoplay muted loop>
-                <source src="/videos/homepage/brain.mp4">
+                <source src="{{ asset('/videos/homepage/brain.mp4') }}">
             </video>
         </div>
         <div class="videoTextCtn">
@@ -126,7 +123,7 @@
             </ul>
             <div class="iaLine"></div>
             <div class="iaGeminiLogo">
-                <a href="https://gemini.google.com/"><img class="geminiLogo" src="/images/brands/gemini.svg"
+                <a href="https://gemini.google.com/"><img class="geminiLogo" src="{{ asset('/images/brands/gemini.svg') }}"
                         alt="@lang('homepage.brandsAlt.gemini')"></a>
                 <p>@lang('homepage.iaSection.proposedGemini')</p>
             </div>
