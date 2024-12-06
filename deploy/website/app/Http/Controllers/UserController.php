@@ -58,7 +58,7 @@ class UserController extends Controller
             return back()->withErrors(['code' => $result['error']]);
         }
 
-        return redirect()->route('home')->with('success', $result['success']);
+        return redirect()->route('dashboard')->with('success', $result['success']);
     }
 
     public function resetVerifCode()

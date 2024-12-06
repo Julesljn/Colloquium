@@ -54,4 +54,8 @@ Route::middleware('auth')->group(function () {
     Route::post('/email/verify', [UserController::class, 'verify'])->name('verification.verify');
     Route::post('user/logout', [UserController::class, 'logout'])->name('user.logout');
     Route::get('/email/resetCode', [UserController::class, 'resetVerifCode'])->name('verification.reset');
+
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
 });

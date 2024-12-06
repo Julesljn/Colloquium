@@ -12,15 +12,17 @@ class Head extends Component
    public $includeHomePage;
    public $includeRegisterLogin;
    public $includeLegal;
+   public $includeDashboard;
     /**
      * Create a new component instance.
      */
-    public function __construct($title = 'Colloquium', $includeHomePage = false, $includeRegisterLogin = false, $includeLegal = false)
+    public function __construct($title = 'Colloquium', $includeHomePage = false, $includeRegisterLogin = false, $includeLegal = false, $includeDashboard = false)
     {
         $this->title = $title;
         $this->includeHomePage = $includeHomePage;
         $this->includeRegisterLogin = $includeRegisterLogin;
         $this->includeLegal = $includeLegal;
+        $this->includeDashboard = $includeDashboard;
 
     }
 

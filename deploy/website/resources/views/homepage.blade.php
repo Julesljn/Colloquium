@@ -14,7 +14,7 @@
             </li>
             @auth
                 <li>
-                    <a class="navBarBtn" href="/">@lang('homepage.navbar.dashboard')</a>
+                    <a class="navBarBtn" href="{{ route('dashboard') }}">@lang('homepage.navbar.dashboard')</a>
                 </li>
                 <li>
                     <form id="logout-form" method="POST" action="{{ route('user.logout') }}" style="display: inline;">
