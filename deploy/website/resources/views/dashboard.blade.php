@@ -19,7 +19,12 @@
             <ul>
                 <li><a href="">@lang('dashboard.burgerMenu.1')</a></li>
             </ul>
-            <span class="menu-footer">@lang('dashboard.disconnect')</span>
+                <form class="menu-footer" method="POST" action="{{ route('user.logout') }}" style="display: inline;">
+                    @csrf
+                    <button class="disconnect_btn" type="submit">
+                        @lang('dashboard.disconnect')
+                    </button>
+                </form>
         </div>
     </header>
     

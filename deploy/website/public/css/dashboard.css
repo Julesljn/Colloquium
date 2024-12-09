@@ -138,3 +138,9 @@ header {
 .menuNameCtn {
     font-size: 1.2em;
 }
+.disconnect_btn {
+    border: none;
+    color: red;
+    background-color: transparent;
+    font-size: 1em;
+}
