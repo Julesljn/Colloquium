@@ -2,11 +2,11 @@
 
 <body>
     <header>
-        <x-logo-colloquium></x-logo-colloquium>
+        <x-logo-colloquium :link="route('dashboard')"></x-logo-colloquium>
         <div class="profilCircle">
             <span>{{ substr(Auth::user()->first_name, 0, 1) }}</span>
         </div>
-        <div class="menu open">
+        <div class="menu">
             <div class="headerMenu">
                 <div class="profilCircle pMenu">
                     <span>{{ substr(Auth::user()->first_name, 0, 1) }}</span>

@@ -12,10 +12,12 @@ class logoColloquium extends Component
      * Create a new component instance.
      */
     public $color;
+    public $link;
 
-    public function __construct($color = '#fbfbfb')
+    public function __construct($color = '#fbfbfb', $link = '/')
     {
         $this->color = $color;
+        $this->link = $link;
     }
 
     /**

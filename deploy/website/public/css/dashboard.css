@@ -93,23 +93,6 @@ header {
 .menu ul > li > a:nth-child(even) {
     background-color: #ffffff;
 }
-/* Close button */
-.closeMenu {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px;
-    cursor: pointer;
-    text-align: left;
-    color: #007bff;
-}
-
-.closeMenu:hover {
-    text-decoration: underline;
-}
-
 .overlay {
     position: fixed;
     top: 0;
